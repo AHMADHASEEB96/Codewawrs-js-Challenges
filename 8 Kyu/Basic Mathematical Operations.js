@@ -1,0 +1,36 @@
+console.log(
+  `------------------- Basic Mathematical Operations -----------------`
+);
+/* Your task is to create a function that does four basic mathematical operations.
+
+The function should take three arguments - operation(string/char), value1(number), value2(number).
+The function should return result of numbers after applying the chosen operation. */
+
+function basicOp(operation, value1, value2) {
+  // console.log(value1 + value2)
+  if (operation == `+`) {
+    console.log(value1 + value2);
+  } else if (operation == `/`) {
+    console.log(value1 / value2);
+  } else if (operation == `-`) {
+    console.log(value1 - value2);
+  } else if (operation == `*`) {
+    console.log(value1 * value2);
+  }
+  // or the same logic with a more easier layout
+  if (operation == `+`) console.log(value1 + value2);
+
+  if (operation == `/`) console.log(value1 / value2);
+
+  if (operation == `-`) console.log(value1 - value2);
+
+    if (operation == `*`) console.log(value1 * value2);
+    
+    // or use the fantastic built-in function eval()
+    console.log(eval(value1 + operation + value2));
+}
+
+basicOp("+", 4, 7);
+basicOp("-", 15, 18);
+basicOp("*", 5, 5);
+basicOp("/", 49, 7);
